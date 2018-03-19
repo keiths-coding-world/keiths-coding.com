@@ -1,0 +1,10 @@
+Redirect 301 /index.html http://keiths-coding.westus.cloudapp.azure.com 
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /  
+  RewriteCond %{HTTP_HOST} ^keiths-coding.westus.cloudapp.azure.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^keiths-coding.westus.cloudapp.azure.com$
+  RewriteRule (.*)$ https://kestrong25.wixsite.com/keith-coding$1 [R=301,L]
+</IfModule>
+
